@@ -6,9 +6,9 @@ This project showcases a clean UI, smooth animations, and a space-themed design 
 ---
 
 ## 🌌 Live Preview
- live demo link here
- spacexwebsitee.netlify.app
+ live demo link here  
 
+ https://spacexwebsitee.netlify.app/
 
 ---
 
@@ -30,8 +30,6 @@ This project showcases a clean UI, smooth animations, and a space-themed design 
 - **JavaScript (ES6)** – Interactivity  
 - **Responsive Design** – Media Queries & Flexbox/Grid  
 
----
 
-## 📂 Project Structure
 
-# SpaceX-Website
+
