@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>SpaceX Shop</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="script.js">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .shop-header {
+      background-color: #000;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      z-index: 2;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 1;
+      width: 300px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .title p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .shop-item {
+      background-color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      border: 1px solid #222;
+    }
+
+    .shop-item:hover {
+      transform: scale(1.03);
+    }
+
+    .shop-item img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+    }
+
+    .shop-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .shop-info h2 {
+      margin-bottom: 10px;
+    }
+
+    .shop-info a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .shop-info a:hover {
+      background: #999;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      margin-top: 50px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+      color: #aaa;
+    }
+
+    footer ul li a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #fff;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      .title {
+        position: static;
+        transform: none;
+        width: 100%;
+        order: 2;
+      }
+
+      .logo {
+        order: 1;
+        align-self: flex-start;
+      }
+
+      .logo img {
+        width: 120px;
+      }
+
+      .title h1 {
+        font-size: 2rem;
+      }
+
+      .title p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title h1 {
+        font-size: 1.5rem;
+      }
+
+      .title p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="shop-header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="SpaceX" />
+        </a>
+      </div>
+      <!-- Centered title using absolute positioning -->
+      <div class="title">
+        <h1> Space </h1>
+          <p>Explore Space Missions & Products</p>
+      </div>
+    </nav>
+  </header>
+
+  <section class="shop-grid">
+    <div class="shop-item">
+      <img src="img/falcon-9.webp" alt="Falcon 9">
+      <div class="shop-info">
+        <h2>Falcon 9</h2>
+        <a href="falcon9.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/falcon-heavy.webp" alt="Falcon Heavy">
+      <div class="shop-info">
+        <h2>Falcon Heavy</h2>
+        <a href="falcon-heavy.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/dragon.webp" alt="Dragon">
+      <div class="shop-info">
+        <h2>Dragon</h2>
+        <a href="dragon.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/starship1.jpg" alt="Starship">
+      <div class="shop-info">
+        <h2>Starship</h2>
+        <a href="Starship.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/human-spaceflight.webp" alt="Human Spaceflight">
+      <div class="shop-info">
+        <h2>Human Spaceflight</h2>
+        <a href="human-spaceflight.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/rideshare.webp" alt="Rideshare">
+      <div class="shop-info">
+        <h2>Rideshare</h2>
+        <a href="rideshare.html">Visit Page</a>
+      </div>
+    </div>
+
+    <div class="shop-item">
+      <img src="img/starlink.webp" alt="Starlink">
+      <div class="shop-info">
+        <h2>Starlink</h2>
+        <a href="starlink.html">Visit Page</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul>
+      <li>SpaceX &copy; 2025 Sachin Kumar. All rights reserved.</li>
+      <li><a href="https://www.linkedin.com/in/sachin-kumar232/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/Sachin-kumar987?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

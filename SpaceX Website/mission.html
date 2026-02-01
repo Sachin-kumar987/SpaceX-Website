@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>SpaceX Missions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    } */
+
+     header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 210px;
+    }
+
+   
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .updates-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .updates-section h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #00bfff;
+    }
+
+    .update {
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      background-color: #111;
+      transition: 0.3s ease-in-out;
+    }
+
+    .update:hover {
+      border-color: #00bfff;
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+    }
+
+    .update h3 {
+      margin-top: 0;
+      color: #00bfff;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .update p {
+      color: #ccc;
+    }
+
+    /* footer {
+      background-color: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li {
+      color: #888;
+    }
+
+    footer ul li a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #fff;
+    } */
+    
+
+     footer {
+      background-color: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li {
+      color: #888;
+    }
+
+    footer ul li a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 0 0;
+      }
+
+      .updates-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <!-- <header>
+    <img src="img/logo.png" alt="SpaceX Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="missions.html">Missions</a>
+      <a href="careers.html">Careers</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header> -->
+
+    <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="SpaceX Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="falcon9.html">Falcon9</a></li>
+        <li><a href="Starship.html">Starship</a></li>
+        <li><a href="Shops.html">Shops</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Updates Section -->
+  <section class="updates-section">
+    <h1>Space Mission</h1>
+
+    <div class="update">
+      <h3>Falcon 9 - Starlink Mission</h3>
+      <div class="date">March 25, 2025</div>
+      <p>A successful Starlink satellite deployment to expand internet access worldwide.</p>
+    </div>
+
+    <div class="update">
+      <h3>Falcon Heavy - Mars Cargo</h3>
+      <div class="date">June 10, 2025</div>
+      <p>Launched: June 10, 2025 - SpaceX sent critical supplies to support the Mars Base Alpha mission.</p>
+    </div>
+
+    <div class="update">
+      <h3>Dragon - ISS Crew Transport</h3>
+      <div class="date">May 5, 2025</div>
+      <p>Launched: May 5, 2025 - Dragon spacecraft successfully transported astronauts to the International Space Station.</p>
+    </div>
+
+    <div class="update">
+      <h3>CRS-25 Mission</h3>
+      <div class="date">Feb 20, 2025</div>
+     <p> Feb 20, 2025 - Resupply mission to the International Space Station using Falcon 9 and Dragon spacecraft.</p>
+    </div>
+
+    <div class="update">
+      <h3>SES-22 Mission</h3>
+      <div class="date">Dec 18, 2024</div>
+     <p>Dec 18, 2024 - Launch of a communications satellite to support television broadcasting and data services.</p>
+    </div>
+
+      <div class="update">
+      <h3>Globalstar FM15</h3>
+      <div class="date">June 14, 2025</div>
+     <p>June 14, 2025 - A low-Earth orbit satellite mission to enhance mobile satellite services worldwide.</p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <ul>
+      <li>SpaceX &copy; 2025 Sachin Kumar. All rights reserved.</li>
+      <li><a href="https://www.linkedin.com/in/sachin-kumar232/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/Sachin-kumar987?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+     
+    </ul>
+  </footer>
+
+</body>
+</html>

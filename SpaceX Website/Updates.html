@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>SpaceX Updates</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    } */
+
+     header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 210px;
+    }
+
+   
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .updates-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .updates-section h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #00bfff;
+    }
+
+    .update {
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      background-color: #111;
+      transition: 0.3s ease-in-out;
+    }
+
+    .update:hover {
+      border-color: #00bfff;
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+    }
+
+    .update h3 {
+      margin-top: 0;
+      color: #00bfff;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .update p {
+      color: #ccc;
+    }
+
+    /* footer {
+      background-color: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li {
+      color: #888;
+    }
+
+    footer ul li a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #fff;
+    } */
+    
+
+     footer {
+      background-color: #111;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    footer ul li {
+      color: #888;
+    }
+
+    footer ul li a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 0 0;
+      }
+
+      .updates-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <!-- <header>
+    <img src="img/logo.png" alt="SpaceX Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="missions.html">Missions</a>
+      <a href="careers.html">Careers</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header> -->
+
+    <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="SpaceX Logo" /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Missions</a></li>
+        <li><a href="Careers.html">Careers</a></li>
+        <li><a href="Shops.html">Shops</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Updates Section -->
+  <section class="updates-section">
+    <h1>Latest Updates from SpaceX</h1>
+
+    <div class="update">
+      <h3>Starship Test Flight Success</h3>
+      <div class="date">July 10, 2025</div>
+      <p>SpaceX's fully integrated Starship completed its fourth successful orbital flight test, marking a huge step toward Mars colonization.</p>
+    </div>
+
+    <div class="update">
+      <h3>Falcon 9 Launches 60 Starlink Satellites</h3>
+      <div class="date">June 28, 2025</div>
+      <p>The Falcon 9 booster successfully deployed 60 new Starlink satellites, enhancing global broadband connectivity.</p>
+    </div>
+
+    <div class="update">
+      <h3>NASA Crew-9 Mission Launch</h3>
+      <div class="date">June 12, 2025</div>
+      <p>SpaceX launched the Crew Dragon spacecraft carrying 4 astronauts to the International Space Station for NASA's Crew-9 mission.</p>
+    </div>
+
+    <div class="update">
+      <h3>Starlink Internet Expands in Africa</h3>
+      <div class="date">May 30, 2025</div>
+      <p>Starlink service is now available in 10 additional African countries, bridging the digital divide in rural regions.</p>
+    </div>
+
+    <div class="update">
+      <h3>First Private Lunar Cargo Mission Announced</h3>
+      <div class="date">May 18, 2025</div>
+      <p>SpaceX is partnering with Japanese company ispace to deliver scientific instruments to the Moon using Starship.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <ul>
+      <li>SpaceX &copy; 2025 Sachin Kumar. All rights reserved.</li>
+      <li><a href="https://www.linkedin.com/in/sachin-kumar232/"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/Sachin-kumar987?tab=repositories"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+     
+    </ul>
+  </footer>
+
+</body>
+</html>
